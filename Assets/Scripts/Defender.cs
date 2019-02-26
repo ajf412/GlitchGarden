@@ -22,7 +22,6 @@ public class Defender : MonoBehaviour
     {
         if (projectile && releasePoint)
         {
-            print("Shooting");
             Instantiate(projectile, releasePoint.transform.position, Quaternion.identity);
         }
     }
