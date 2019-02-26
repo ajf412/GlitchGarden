@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: ed7759be9281686469583582e773df7c
+guid: 201ea3d1f55ba424bb2f6c2846be8438
 TextureImporter:
   fileIDToRecycleName:
-    21300000: JumpEnd_0
-    21300002: JumpEnd_1
-    21300004: JumpEnd_2
-    21300006: JumpEnd_3
-    21300008: JumpEnd_4
-    21300010: JumpEnd_5
+    21300000: Chest_ClosedOpen_0
+    21300002: Chest_ClosedOpen_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -112,73 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JumpEnd_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 480
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5aa69b31ed7cf941a96e23544f8f5e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_1
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 480
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c64b8311043a8cb459cd80d71d241693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_2
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 480
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32d38588e849002409c2aa3e26727b8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_3
+      name: Chest_ClosedOpen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fecb780a65c37f47890c9b19a074835
+      spriteID: 0e41703235e4fde4691fda1f7a195e29
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpEnd_4
+      name: Chest_ClosedOpen_1
       rect:
         serializedVersion: 2
-        x: 600
+        x: 240
         y: 0
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,27 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f27659e4d977bb4ba4008700226ccf7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_5
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67081fc4506f28248bd25cccb8586bc2
+      spriteID: f105fe02d7cb2b843bbd24738494524d
       vertices: []
       indices: 
       edges: []
@@ -234,7 +150,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 091f5d484e97f79409f2b2095dc9061a
+    spriteID: 2c98bddd85699d84bbb13828cf3877e1
     vertices: []
     indices: 
     edges: []

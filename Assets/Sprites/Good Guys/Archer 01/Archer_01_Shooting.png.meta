@@ -1,13 +1,17 @@
 fileFormatVersion: 2
-guid: ed7759be9281686469583582e773df7c
+guid: 55ae4d1c44acc0642b2308191074f23c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: JumpEnd_0
-    21300002: JumpEnd_1
-    21300004: JumpEnd_2
-    21300006: JumpEnd_3
-    21300008: JumpEnd_4
-    21300010: JumpEnd_5
+    21300000: Archer_01_Shooting_0
+    21300002: Archer_01_Shooting_1
+    21300004: Archer_01_Shooting_2
+    21300006: Archer_01_Shooting_3
+    21300008: Archer_01_Shooting_4
+    21300010: Archer_01_Shooting_5
+    21300012: Archer_01_Shooting_6
+    21300014: Archer_01_Shooting_7
+    21300016: Archer_01_Shooting_8
+    21300018: Archer_01_Shooting_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -51,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +116,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JumpEnd_0
+      name: Archer_01_Shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cfbe6efed5e9f24189f54e0751b3e63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 720
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dae6faff3693454a97d2f2a9b1c1a0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 720
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed4f21c9d9c0a347bc00c4d886d05a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_3
       rect:
         serializedVersion: 2
         x: 0
         y: 480
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +190,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5aa69b31ed7cf941a96e23544f8f5e7
+      spriteID: b4a6d6026428d004bac31c0aacc60daa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpEnd_1
+      name: Archer_01_Shooting_4
       rect:
         serializedVersion: 2
-        x: 600
+        x: 240
         y: 480
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +210,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64b8311043a8cb459cd80d71d241693
+      spriteID: 333822d26ea06b14da9673fe5b961293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpEnd_2
+      name: Archer_01_Shooting_5
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 480
         y: 480
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,19 +230,79 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d38588e849002409c2aa3e26727b8e
+      spriteID: 921ea3db826669241ab3f3a51baa2b49
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JumpEnd_3
+      name: Archer_01_Shooting_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaab3d08199ad0d4c95eec4c65d0c018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5472782d696443144bd0f33c9fc16296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7d3efc6cc70d2468e9b4250faea389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer_01_Shooting_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 600
-        height: 480
+        width: 240
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,47 +310,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fecb780a65c37f47890c9b19a074835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_4
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f27659e4d977bb4ba4008700226ccf7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpEnd_5
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 600
-        height: 480
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67081fc4506f28248bd25cccb8586bc2
+      spriteID: 828a0892c479ed143a2a4ffbc3d3fd35
       vertices: []
       indices: 
       edges: []
@@ -234,7 +318,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 091f5d484e97f79409f2b2095dc9061a
+    spriteID: 72839dfe24ae388419709a225d92b2d6
     vertices: []
     indices: 
     edges: []
