@@ -5,6 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] int fullHealth = 50;
+    [SerializeField] GameObject hitParticles;
+
 
     int currentHealth;
     // Start is called before the first frame update
@@ -23,6 +25,12 @@ public class Health : MonoBehaviour
     {
         currentHealth -= damage;
         // Play hurt vfx
+        if (hitParticles)
+        {
+            GameObject hitParticlesOBJ = Instantiate(hitParticles, transform.position, transform.rotation);
+            Destroy(hitParticlesOBJ, 1f);
+        }
+        
         // play hurt audio
 
         if(currentHealth <= 0)
@@ -33,6 +41,7 @@ public class Health : MonoBehaviour
 
     IEnumerator Die()
     {
+        // if (!deathVFX) { return; }
         // play death VFX
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);

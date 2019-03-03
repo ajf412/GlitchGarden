@@ -7,6 +7,11 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int projectileDamage = 20;
 
+    private void Start()
+    {
+        Destroy(gameObject, 3f);
+    }
+
     void Update()
     {
         transform.Translate(Vector2.right * projectileSpeed * Time.deltaTime);    
@@ -17,15 +22,13 @@ public class Projectile : MonoBehaviour
         Debug.Log("Hit " + other.gameObject.name);
 
         // check if attacker
-        Attacker attacker = other.gameObject.GetComponent<Attacker>();
-        if(!attacker) { return; }
-        
-        // check for health component
         Health health = other.gameObject.GetComponent<Health>();
-        if (health)
+        Attacker attacker = other.gameObject.GetComponent<Attacker>();
+      
+        if (attacker && health)
         {
             health.DealDamage(projectileDamage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }
