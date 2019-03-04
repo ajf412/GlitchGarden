@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackerSpawner : MonoBehaviour
 {
     bool spawn = true;
-    [SerializeField] GameObject[] mobs;
+    [SerializeField] GameObject[] mobs = null;
     [SerializeField] float minSpawnDelay = 1.0f;
     [SerializeField] float maxSpawnDelay = 5.0f;
 

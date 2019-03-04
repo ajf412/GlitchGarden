@@ -19,8 +19,6 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hit " + other.gameObject.name);
-
         // check if attacker
         Health health = other.gameObject.GetComponent<Health>();
         Attacker attacker = other.gameObject.GetComponent<Attacker>();

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] int fullHealth = 50;
-    [SerializeField] GameObject hitParticles;
+    [SerializeField] GameObject hitParticles = null;
 
 
     int currentHealth;

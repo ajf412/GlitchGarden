@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4167542132451274684}
   - component: {fileID: 4167542132451274686}
   - component: {fileID: 3146237554160607230}
+  - component: {fileID: 7202665533376024115}
   m_Layer: 0
   m_Name: Archer_01
   m_TagString: Untagged
@@ -146,3 +147,16 @@ MonoBehaviour:
   projectile: {fileID: 8910771010294225032, guid: 9be77ca71e2c049459a6cc5e6b846f88,
     type: 3}
   releasePoint: {fileID: 1816961856}
+--- !u!114 &7202665533376024115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4167542132451274675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567b048cbfcbc674bbe5b4402a53c52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCost: 100
