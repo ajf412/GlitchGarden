@@ -4,5 +4,15 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-        [SerializeField] int coinCost = 100;
+    [SerializeField] int coinCost = 100;
+
+    public void AddCoins(int amount)
+    {
+        FindObjectOfType<CoinDisplay>().AddCoins(amount);
+    }
+
+    public int GetCoinCost()
+    {
+        return coinCost;
+    }
 }
