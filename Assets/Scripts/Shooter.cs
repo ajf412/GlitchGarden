@@ -6,23 +6,29 @@ public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject projectile = null, releasePoint = null;
     AttackerSpawner myLaneSpawner = null;
+    Animator animator = null;
 
     private void Start()
     {
         SetLaneSpawner();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("I am in lane " + transform.position.y + " and I'm shooting " + myLaneSpawner.transform.childCount + " Zombies.");
-            // TODO Change animation state to shooting
+            // Debug.Log("I am in lane " + transform.position.y + " and I'm shooting " + myLaneSpawner.transform.childCount + " Zombies.");
+            
+            // Set ATTACK animation
+            animator.SetBool("isAttacking", true);
         }
         else
         {
-            Debug.Log("I am in lane " + transform.position.y + " and my lane count is: " + myLaneSpawner.transform.childCount);
-            // TODO Change animation state to idle
+            // Debug.Log("I am in lane " + transform.position.y + " and my lane count is: " + myLaneSpawner.transform.childCount);
+            
+            // Set IDLE animation
+            animator.SetBool("isAttacking", false);
         }
     }
 
