@@ -6,10 +6,11 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
     [SerializeField] int projectileDamage = 20;
+    [SerializeField] float destroyTime = 3f;
 
     private void Start()
     {
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, destroyTime);
     }
 
     void Update()
@@ -25,6 +26,7 @@ public class Projectile : MonoBehaviour
       
         if (attacker && health)
         {
+            Debug.Log(gameObject.name + " is hitting " + other.name);
             health.DealDamage(projectileDamage);
             Destroy(gameObject);
         }
