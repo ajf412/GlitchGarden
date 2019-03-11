@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    float currentSpeed = 1f;
+    [SerializeField] int damage = 10;
+    [Range(0f, 5f)]float currentSpeed = 1f;
+    GameObject currentTarget = null;
+    Animator animator = null;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,5 +23,26 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+
+    public void Attack(GameObject target)
+    {
+        animator.SetBool("isAttacking", true);
+        currentTarget = target;
+    }
+
+    public void StrikeCurrentTarget()
+    {
+        if (!currentTarget)
+        {
+            animator.SetBool("isAttacking", false);
+            return;
+        }
+        Health health = currentTarget.GetComponent<Health>();
+        if (health)
+        {
+            health.DealDamage(damage);
+            Debug.Log("removing " + damage + " damage from " + currentTarget.name);
+        }
     }
 }

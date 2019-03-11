@@ -26,7 +26,6 @@ public class Projectile : MonoBehaviour
       
         if (attacker && health)
         {
-            Debug.Log(gameObject.name + " is hitting " + other.name);
             health.DealDamage(projectileDamage);
             Destroy(gameObject);
         }

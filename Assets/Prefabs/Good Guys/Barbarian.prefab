@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5837221477837848909}
   - component: {fileID: 5837221477837848910}
   - component: {fileID: 5837221477837848911}
+  - component: {fileID: 2279498743719423756}
   m_Layer: 0
   m_Name: Barbarian
   m_TagString: Untagged
@@ -138,6 +139,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2279498743719423756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837221477837848904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f438b810cb614bd4c99d71667df6170e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullHealth: 100
+  hitParticles: {fileID: 0}
 --- !u!1 &5837221477961540162
 GameObject:
   m_ObjectHideFlags: 0
