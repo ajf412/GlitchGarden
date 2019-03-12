@@ -20,15 +20,15 @@ public class AttackerSpawner : MonoBehaviour
 
     private void SpawnAttacker()
     {
-        // Create mob
-        Attacker newAttacker = Instantiate(mobs[0], transform.position, Quaternion.identity) as Attacker;
-
-        newAttacker.transform.parent = transform;
+        // Spawn random mob
+        Spawn(mobs[Random.Range(0, mobs.Length)]);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Spawn(Attacker attacker)
     {
-        
+        // spawn new mob
+        Attacker newAttacker = Instantiate(attacker, transform.position, Quaternion.identity) as Attacker;
+        // set the mob's parent as spawner's transform.
+        newAttacker.transform.parent = transform;
     }
 }

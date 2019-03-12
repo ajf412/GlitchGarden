@@ -20,6 +20,11 @@ public class Attacker : MonoBehaviour
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
     }
 
+    public int GetDamage()
+    {
+        return damage;
+    }
+
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
