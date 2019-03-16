@@ -14,6 +14,16 @@ public class Attacker : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().AddAttacker();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().RemoveAttacker();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -47,7 +57,7 @@ public class Attacker : MonoBehaviour
         if (health)
         {
             health.DealDamage(damage);
-            Debug.Log("removing " + damage + " damage from " + currentTarget.name);
+            // Debug.Log("removing " + damage + " damage from " + currentTarget.name);
         }
     }
 }

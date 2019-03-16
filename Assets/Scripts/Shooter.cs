@@ -5,27 +5,27 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     [SerializeField] GameObject projectile = null, releasePoint = null;
-    AttackerSpawner myLaneSpawner = null;
+    AttackerSpawner myLaneSpawner;
     Animator animator = null;
 
     private void Start()
     {
         SetLaneSpawner();
-        animator = GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (IsAttackerInLane())
         {
-            // Debug.Log("I am in lane " + transform.position.y + " and I'm shooting " + myLaneSpawner.transform.childCount + " Zombies.");
+            Debug.Log("I am in lane " + transform.position.y + " and my spawner has " + myLaneSpawner.transform.childCount + " Attackers.");
             
             // Set ATTACK animation
             animator.SetBool("isAttacking", true);
         }
         else
         {
-            // Debug.Log("I am in lane " + transform.position.y + " and my lane count is: " + myLaneSpawner.transform.childCount);
+            Debug.Log("I am in lane " + transform.position.y + " and my lane is empty.");
             
             // Set IDLE animation
             animator.SetBool("isAttacking", false);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wolf : MonoBehaviour
 {
-    Animator animator = null;
+    // Animator animator = null;
 
     private void Start()
     {

@@ -14,7 +14,7 @@ public class AttackerSpawner : MonoBehaviour
         while(spawn)
         {
             yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay));
-            SpawnAttacker();
+            if (spawn) { SpawnAttacker(); }
         }
     }
 
@@ -30,5 +30,10 @@ public class AttackerSpawner : MonoBehaviour
         Attacker newAttacker = Instantiate(attacker, transform.position, Quaternion.identity) as Attacker;
         // set the mob's parent as spawner's transform.
         newAttacker.transform.parent = transform;
+    }
+
+    public void StopSpawning()
+    {
+        spawn = false;
     }
 }
