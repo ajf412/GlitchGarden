@@ -18,15 +18,16 @@ public class Shooter : MonoBehaviour
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("I am in lane " + transform.position.y + " and my spawner has " + myLaneSpawner.transform.childCount + " Attackers.");
+            Debug.Log("Lane: " + transform.position.y + " Spawner: " + myLaneSpawner.name + " Child Count: " + myLaneSpawner.transform.childCount);
             
             // Set ATTACK animation
             animator.SetBool("isAttacking", true);
         }
         else
         {
-            Debug.Log("I am in lane " + transform.position.y + " and my lane is empty.");
-            
+            // Debug.Log("I am in lane " + transform.position.y + " and my lane is empty.");
+            Debug.Log(name + "\'s spawner: " + myLaneSpawner.name, myLaneSpawner.gameObject);
+
             // Set IDLE animation
             animator.SetBool("isAttacking", false);
         }
@@ -38,11 +39,13 @@ public class Shooter : MonoBehaviour
 
         foreach(AttackerSpawner spawner in spawners)
         {
-            bool IsCloseEnough = (Mathf.Abs(spawner.transform.position.y) - transform.position.y <= Mathf.Epsilon);
+            bool IsCloseEnough = (Mathf.Abs(spawner.transform.position.y - gameObject.transform.position.y) <= Mathf.Epsilon);
+            // bool IsCloseEnough = (spawner.transform.position.y == gameObject.transform.position.y);
 
             if (IsCloseEnough)
             {
                 myLaneSpawner = spawner;
+                // return;
             }
         }
     }
