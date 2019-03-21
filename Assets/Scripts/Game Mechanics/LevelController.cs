@@ -7,6 +7,7 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject levelCompleteCanvas;
     [SerializeField] AudioClip winClip;
+    [SerializeField] float waitToLoad = 4.5f;
     [SerializeField] int liveAttackers = 0;  // Serialized for debugging.
     bool timerEnd = false;
     Scene scene;
@@ -48,11 +49,14 @@ public class LevelController : MonoBehaviour
 
     IEnumerator LevelComplete()
     {
+        // play win sfx
         AudioSource.PlayClipAtPoint(winClip, Camera.main.transform.position);
+        // display "level complete!" canvas
         levelCompleteCanvas.SetActive(true);
-        yield return new WaitForSeconds(4.5f);
+        // wait for sfx
+        yield return new WaitForSeconds(waitToLoad);
         // Load next scene
-        SceneManager.LoadScene(scene.buildIndex + 1);
+        FindObjectOfType<LevelLoader>().LoadNextScene();
     }
 
     public void TimerEnd()
