@@ -45,7 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteCanvas: {fileID: 0}
-  winClip: {fileID: 8300000, guid: 511ea2e3948bcfd468a1c38b783c4fbf, type: 3}
+  levelDefeatCanvas: {fileID: 0}
+  winClip: {fileID: 8300000, guid: 02590d2614659b847b3d10ae5ccd1361, type: 3}
+  loseClip: {fileID: 8300000, guid: 47ab9834ed5aefa4cb7b2c1cfe385120, type: 3}
+  waitToLoad: 4.5
   liveAttackers: 0
 --- !u!114 &9045396333948605105
 MonoBehaviour:

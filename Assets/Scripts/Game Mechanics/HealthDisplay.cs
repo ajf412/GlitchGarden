@@ -26,7 +26,7 @@ public class HealthDisplay : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            FindObjectOfType<LevelLoader>().GameOver();
+            FindObjectOfType<LevelController>().LevelDefeat();
         }
         else
         {
