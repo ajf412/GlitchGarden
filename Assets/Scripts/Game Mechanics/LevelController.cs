@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] GameObject levelCompleteCanvas;
-    [SerializeField] GameObject levelDefeatCanvas;
+    [SerializeField] GameObject levelCompleteCanvas = null;
+    [SerializeField] GameObject levelDefeatCanvas = null;
     [SerializeField] AudioClip winClip;
     [SerializeField] AudioClip loseClip;
     [SerializeField] float waitToLoad = 4.5f;
@@ -16,8 +16,15 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
-        levelCompleteCanvas.SetActive(false);
-        levelDefeatCanvas.SetActive(false);
+        if (levelCompleteCanvas)
+        {
+            levelCompleteCanvas.SetActive(false);
+        }
+        if (levelDefeatCanvas)
+        {
+            levelDefeatCanvas.SetActive(false);
+        }
+        
         scene = SceneManager.GetActiveScene();
     }
 
