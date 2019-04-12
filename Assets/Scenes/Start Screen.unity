@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 1070549808}
   - component: {fileID: 1070549807}
   m_Layer: 5
-  m_Name: Options Text
+  m_Name: Options Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1854752864}
   - component: {fileID: 1854752866}
   m_Layer: 5
-  m_Name: Start Text
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 2011624808}
   - component: {fileID: 2011624807}
   m_Layer: 5
-  m_Name: Quit Text
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

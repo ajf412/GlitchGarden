@@ -7,8 +7,8 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] GameObject levelCompleteCanvas = null;
     [SerializeField] GameObject levelDefeatCanvas = null;
-    [SerializeField] AudioClip winClip;
-    [SerializeField] AudioClip loseClip;
+    [SerializeField] AudioClip winClip = null;
+    [SerializeField] AudioClip loseClip = null;
     [SerializeField] float waitToLoad = 4.5f;
     [SerializeField] int liveAttackers = 0;  // Serialized for debugging.
     bool timerEnd = false;
