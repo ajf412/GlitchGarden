@@ -26,7 +26,7 @@ public class CoinDisplay : MonoBehaviour
 
     public void AddCoins(int amount)
     {
-        coins += amount;
+        coins += Mathf.CeilToInt(amount / PlayerPrefsController.GetMasterDifficulty());
         UpdateDisplay();
     }
 

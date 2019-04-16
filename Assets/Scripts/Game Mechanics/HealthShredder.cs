@@ -9,9 +9,9 @@ public class HealthShredder : MonoBehaviour
         Debug.Log("HealthShredder hit by " + collision.name);
         if (collision.GetComponent<Attacker>())
         {
-            int damage = -collision.GetComponent<Attacker>().GetDamage();
+            float damage = -collision.GetComponent<Attacker>().GetDamage();
             FindObjectOfType<HealthDisplay>().UpdateHealth(damage);
-            Destroy(collision.gameObject);
+            collision.GetComponent<Health>().Shred();
         }
     }
 }

@@ -210,11 +210,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7804114993120735824, guid: c2d6afc0c5a38514a858e187894e8519,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1245900178212600807, guid: c2d6afc0c5a38514a858e187894e8519,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -498,11 +493,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 7804114993120735824, guid: c2d6afc0c5a38514a858e187894e8519,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1245900178212600807, guid: c2d6afc0c5a38514a858e187894e8519,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -557,16 +547,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7804114993120735825, guid: c2d6afc0c5a38514a858e187894e8519,
-        type: 3}
-      propertyPath: minSpawnDelay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7804114993120735825, guid: c2d6afc0c5a38514a858e187894e8519,
-        type: 3}
-      propertyPath: maxSpawnDelay
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2d6afc0c5a38514a858e187894e8519, type: 3}
@@ -767,6 +747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level Defeat Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652730219769825519, guid: fe6c0b8da62e8e34db7ef6b914aa0823,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2652730219769825555, guid: fe6c0b8da62e8e34db7ef6b914aa0823,
         type: 3}
@@ -1279,7 +1264,7 @@ PrefabInstance:
     - target: {fileID: 7779912051069617311, guid: da4bcaf2532d5d046b98bbb50a8cdbbc,
         type: 3}
       propertyPath: maxHealth
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7779912049864587917, guid: da4bcaf2532d5d046b98bbb50a8cdbbc,
         type: 3}
@@ -1310,6 +1295,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779912050073797432, guid: da4bcaf2532d5d046b98bbb50a8cdbbc,
+        type: 3}
+      propertyPath: levelTime
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779912050621549412, guid: da4bcaf2532d5d046b98bbb50a8cdbbc,
+        type: 3}
+      propertyPath: coins
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da4bcaf2532d5d046b98bbb50a8cdbbc, type: 3}

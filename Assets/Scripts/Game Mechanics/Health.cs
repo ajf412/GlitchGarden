@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int fullHealth = 50;
+    [SerializeField] float fullHealth = 50;
+    [SerializeField] float currentHealth = 0;  // Shown for debugging purposes.
     [SerializeField] GameObject hitParticles = null;
 
-
-    int currentHealth;
+    float difficulty = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
+        bool attacker = GetComponent<Attacker>();
+        bool defender = GetComponent<Defender>();
+        difficulty = PlayerPrefsController.GetMasterDifficulty();
+
+        if(attacker){
+            Debug.Log(gameObject.name + " orig health set to: " + fullHealth);
+            fullHealth = fullHealth * difficulty;
+            Debug.Log(gameObject.name + " diff health set to: " + fullHealth);
+        }
+        else if(defender)
+        {
+            Debug.Log(gameObject.name + " orig health set to: " + fullHealth);
+            fullHealth = fullHealth / difficulty;
+            Debug.Log(gameObject.name + " diff health set to: " + fullHealth);
+        }
+
         currentHealth = fullHealth;
+        Debug.Log(gameObject.name + " level health set to: " + currentHealth);
     }
 
     // Update is called once per frame
@@ -21,7 +38,7 @@ public class Health : MonoBehaviour
         
     }
 
-    public void DealDamage(int damage)
+    public void DealDamage(float damage)
     {
         currentHealth -= damage;
         // Play hurt vfx
@@ -37,6 +54,11 @@ public class Health : MonoBehaviour
         {
             StartCoroutine(Die());
         }
+    }
+
+    public void Shred()
+    {
+        Destroy(gameObject);
     }
 
     IEnumerator Die()

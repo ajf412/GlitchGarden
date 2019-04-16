@@ -40,6 +40,7 @@ public class LevelController : MonoBehaviour
         {
             EndLevel();
         }
+        Debug.Log("# of Attackers: " + liveAttackers);
     }
 
     public void EndLevel()

@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f438b810cb614bd4c99d71667df6170e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullHealth: 50
+  fullHealth: 100
   hitParticles: {fileID: 1753972812659817891, guid: bec6d39955bb08948948507fcd84d5a8,
     type: 3}
 --- !u!114 &4024586857337698074

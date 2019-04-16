@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 100;
-    int currentHealth;
+    [SerializeField] float maxHealth = 100;
+    float currentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = Mathf.Round(maxHealth / PlayerPrefsController.GetMasterDifficulty());
         displayHealth();
     }
 
@@ -20,7 +20,7 @@ public class HealthDisplay : MonoBehaviour
         gameObject.GetComponent<Text>().text = currentHealth.ToString();
     }
 
-    public void UpdateHealth(int changeInHealth)
+    public void UpdateHealth(float changeInHealth)
     {
         currentHealth += changeInHealth;
 

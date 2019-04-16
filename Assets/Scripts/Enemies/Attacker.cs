@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    [SerializeField] int damage = 10;
+    [SerializeField] float damage = 10.0f;
     [Range(0f, 5f)]float currentSpeed = 1f;
     GameObject currentTarget = null;
     Animator animator = null;
+    float difficulty = 1.0f;
 
     private void Start()
     {
+        difficulty = PlayerPrefsController.GetMasterDifficulty();
         animator = GetComponent<Animator>();
+        Debug.Log(gameObject.name + " initial damage: " + damage);
+        damage *= difficulty;
+        Debug.Log(gameObject.name + " difficulty damage: " + damage);
     }
 
     private void Awake()
@@ -30,7 +35,7 @@ public class Attacker : MonoBehaviour
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
     }
 
-    public int GetDamage()
+    public float GetDamage()
     {
         return damage;
     }

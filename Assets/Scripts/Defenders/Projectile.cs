@@ -5,12 +5,13 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 1f;
-    [SerializeField] int projectileDamage = 20;
+    [SerializeField] float projectileDamage = 20f;
     [SerializeField] float destroyTime = 3f;
 
     private void Start()
     {
         Destroy(gameObject, destroyTime);
+        projectileDamage /= PlayerPrefsController.GetMasterDifficulty();
     }
 
     void Update()

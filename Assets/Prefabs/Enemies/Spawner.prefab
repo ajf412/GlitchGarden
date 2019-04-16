@@ -46,5 +46,5 @@ MonoBehaviour:
   mobs:
   - {fileID: 3194232629498266499, guid: ae52c3bbbdbb5df43913f5e7a8427826, type: 3}
   - {fileID: 4024586857337698072, guid: 610c450aed6905d42b8f560f6803d0ad, type: 3}
-  minSpawnDelay: 2
-  maxSpawnDelay: 5
+  minSpawnDelay: 5
+  maxSpawnDelay: 7
