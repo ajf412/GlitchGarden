@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4583270270413133166}
   - component: {fileID: 7277051940780170237}
   - component: {fileID: 3767616294621829798}
+  - component: {fileID: 7716471878467768828}
   m_Layer: 0
   m_Name: Coin Chest
   m_TagString: Untagged
@@ -93,6 +94,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7716471878467768828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583270270413133161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f438b810cb614bd4c99d71667df6170e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullHealth: 50
+  currentHealth: 0
+  hitParticles: {fileID: 0}
 --- !u!1 &4583270271575112683
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +8,23 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectile = null, releasePoint = null;
     AttackerSpawner myLaneSpawner;
     Animator animator = null;
+    GameObject projectileParent;
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
 
     private void Start()
     {
         SetLaneSpawner();
         animator = gameObject.GetComponent<Animator>();
+        CreateProjectileParent();
+    }
+
+    private void CreateProjectileParent()
+    {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (!projectileParent)
+        {
+            projectileParent = new GameObject(PROJECTILE_PARENT_NAME);
+        }
     }
 
     private void Update()
@@ -60,7 +73,8 @@ public class Shooter : MonoBehaviour
     {
         if (projectile && releasePoint)
         {
-            Instantiate(projectile, releasePoint.transform.position, Quaternion.identity);
+            GameObject newProjectile = Instantiate(projectile, releasePoint.transform.position, Quaternion.identity) as GameObject;
+            newProjectile.transform.parent = projectileParent.transform;
         }
     }
 }
